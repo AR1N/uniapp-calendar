@@ -82,7 +82,7 @@ export default {
     },
     created() {
         this.dates = this.monthDay(this.y, this.m);
-        !this.open && this.trgWeek();
+        !this.open && this.toggle();
     },
     mounted() {
         this.choose = this.getToday().date;

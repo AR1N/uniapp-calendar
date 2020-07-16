@@ -1,6 +1,6 @@
 <template>
 	<view class="content">
-		<ren-calendar ref='ren' :markDays='markDays' :headerBar='false' @onDayClick='onDayClick'></ren-calendar>
+		<ren-calendar ref='ren' :markDays='markDays' :open="true" :disabledAfter='true'  @onDayClick='onDayClick'></ren-calendar>
         <view class="change">选中日期：{{curDate}}</view>
 	</view>
 </template>
