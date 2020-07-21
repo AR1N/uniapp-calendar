@@ -120,7 +120,7 @@ export default {
             let dates = [];
             let m = Number(month);
             let firstDayOfMonth = new Date(y, m - 1, 1).getDay(); // 当月第一天星期几
-            let lastDateOfMonth = new Date(y, m - 1, 0).getDate(); // 当月最后一天
+            let lastDateOfMonth = new Date(y, m, 0).getDate(); // 当月最后一天
             let lastDayOfLastMonth = new Date(y, m - 2, 0).getDate(); // 上一月的最后一天
             let weekstart = this.weekstart == 7 ? 0 : this.weekstart;
             let startDay = (() => {
